@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body class="d-flex justify-content-center ">
+    <div class="card " style="width: 18rem;">
+        <h1 class="text-center border-bottom bg-light">To Do</h1>
+        <div class="card-body">
+            <ul class="task-list list-group list-group-flush">
+                <li itemid="0" class="task list-group-item d-flex justify-content-between align-items-center">
+                    <p>görev 1</p>
+                    <button onclick="removetask(this.parentElement)" class="btn-kaldır btn btn-danger">X</button>
+                </li>
+                <li itemid="1" class="task list-group-item d-flex justify-content-between align-items-center">
+                    <p>görev 2</p>
+                    <button onclick="removetask(this.parentElement)" class="btn-kaldır btn btn-danger">X</button>
+                </li>
+            </ul>
+        </div>
+        <div class="card-footer">
+            <div class="input-group mb-3">
+                <input type="text" class="txt-task form-control" placeholder="Görev" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn-ekle btn btn-primary" type="button" id="button-addon2">Ekle</button>
+            </div>
+            <div class="input-group mb-3 row">
+                <div class="col-md-8">
+
+                    <input type="text" class="txt-edittask form-control" placeholder="new task" aria-label="Recipient's username" aria-describedby="button-addon2">
+                </div>
+                <div class=" col-md-4 d-flex">
+
+                    <input type="text" class="txt-edittaskid form-control" placeholder="id" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn-güncelle btn btn-primary" type="button" id="button-addon2">Güncelle</button>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <script src="script.js"></script>
+</body>
+</html>
